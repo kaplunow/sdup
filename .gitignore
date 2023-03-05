@@ -5,9 +5,11 @@ lab/1/hello/
 lab/1/test/
 
 # woloszw's ignores
-lab/1/Project/
-# Created by https://www.toptal.com/developers/gitignore/api/vivado,xilinxvivado
-# Edit at https://www.toptal.com/developers/gitignore?templates=vivado,xilinxvivado
+
+/glbl.v
+
+# Created by https://www.toptal.com/developers/gitignore/api/vivado
+# Edit at https://www.toptal.com/developers/gitignore?templates=vivado
 
 ### Vivado ###
 #########################################################################################################
@@ -23,7 +25,7 @@ lab/1/Project/
 #Source files:
 #Do NOT ignore VHDL, Verilog, block diagrams or EDIF files.
 !*.vhd
-!*.v
+#*.v
 !*.sv
 !*.bd
 !*.edif
@@ -31,55 +33,49 @@ lab/1/Project/
 #.xci: synthesis and implemented not possible - you need to return back to the previous version to generate output products
 #.xci + .dcp: implementation possible but not re-synthesis
 #*.xci(www.spiritconsortium.org)
-!*.xci
+*.xci
 #.xcix: Core container file
 #.xcix: https://www.xilinx.com/support/documentation/sw_manuals/xilinx2016_2/ug896-vivado-ip.pdf (Page 41)
-!*.xcix
+*.xcix
 #*.dcp(checkpoint files)
-!*.dcp
-!*.vds
-!*.pb
+*.dcp
+*.vds
+*.pb
 #All bd comments and layout coordinates are stored within .ui
-!*.ui
-!*.ooc
+*.ui
+*.ooc
 #System Generator
-!*.mdl
-!*.slx
-!*.bxml
+*.mdl
+*.slx
+*.bxml
 #Simulation logic analyzer
-!*.wcfg
-!*.coe
+*.wcfg
+*.coe
 #MIG
-!*.prj
-!*.mem
+*.prj
+*.mem
 #Project files
 #XPR  +  *.XML ? XPR (Files are merged into a single XPR file for 2014.1 version)
 #Do NOT ignore *.xpr files
-!*.xpr
+*.xpr
 #Include *.xml files for 2013.4 or earlier version
-!*.xml
+*.xml
 #Constraint files
 #Do NOT ignore *.xdc files
-!*.xdc
+*.xdc
 #TCL - files
-!*.tcl
+*.tcl
 #Journal - files
-!*.jou
+*.jou
 #Reports
-!*.rpt
-!*.txt
-!*.vdi
+*.rpt
+*.txt
+*.vdi
 #C-files
-!*.c
-!*.h
-!*.elf
-!*.bmm
-!*.xmp
+*.c
+*.h
+*.elf
+*.bmm
+*.xmp
 
-### XilinxVivado ###
-#.xci: IP-core property file with core container disabled
-#*.dcp (checkpoint files: better be ignored!)
-#!*.dcp
-
-# End of https://www.toptal.com/developers/gitignore/api/vivado,xilinxvivado
-
+# End of https://www.toptal.com/developers/gitignore/api/vivado
