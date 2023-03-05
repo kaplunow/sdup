@@ -25,6 +25,7 @@ lab/1/test/
 #Source files:
 #Do NOT ignore VHDL, Verilog, block diagrams or EDIF files.
 !*.vhd
+!*.py
 #*.v
 !*.sv
 !*.bd
