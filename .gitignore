@@ -6,7 +6,7 @@ lab/1/test/
 
 # woloszw's ignores
 
-/glbl.v
+#/glbl.v
 
 # Created by https://www.toptal.com/developers/gitignore/api/vivado
 # Edit at https://www.toptal.com/developers/gitignore?templates=vivado
@@ -17,9 +17,8 @@ lab/1/test/
 ##	it might not be complete. In addition, XAPP 1165 should be followed.
 #########
 #Exclude all
-*
-!*/
-!.gitignore
+#!*/
+#!.gitignore
 ###########################################################################
 ##	VIVADO
 #Source files:
