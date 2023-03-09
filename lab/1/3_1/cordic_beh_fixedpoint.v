@@ -20,7 +20,7 @@ reg signed [11:0] angle = 0.0 * FXP_SCALE; //Running angle
 
 reg signed [23:0] Kn_sin;
 reg signed [23:0] Kn_cos;
-integer i, d;
+integer i;
 reg signed [11:0] tmp;
 
 initial //Execute only once
