@@ -27,7 +27,7 @@ reg [3:0] state;
 //Algorithm Variables
 reg signed [11:0] angle, t_angle, sin, cos, sin_frac, cos_frac;
 reg signed [11:0] atan_val;
-reg signed [22:0] sin_0, cos_0, sin_2, cos_2, sin_4, cos_4, sin_5, cos_5, sin_7, cos_7,
+reg signed [23:0] sin_0, cos_0, sin_2, cos_2, sin_4, cos_4, sin_5, cos_5, sin_7, cos_7,
 sin_9, cos_9;
 
 //Iterators
@@ -58,25 +58,25 @@ begin
             end
             
             S3: begin
-                sin_frac <= ???;
-                cos_frac <= ???;
+                sin_frac <= sin;
+                cos_frac <= cos;
                 d <= 0;
                 atan_val <= atan[i];
-                state <= ???;
+                state <= S4;
             end
             
             S4:begin
                 if( d < i )
-                state <= ???;
+                state <= S5;
                 else
-                if(angle < t_angle) state <= ???; else state <= ???;
+                if(angle < t_angle) state <= S6; else state <= S7;
             end
             
             S5:begin
                 sin_frac <= sin_frac >>> 1;
                 cos_frac <= cos_frac >>> 1;
-                d <= ???;
-                state <= ???;
+                d <= d + 1;
+                state <= S4;
             end
             
             S6:begin
@@ -88,11 +88,11 @@ begin
             end
             
             S7:begin
-                angle <= ???;
-                cos <= ???;
-                sin <= ???;
+                angle <= angle - atan_val;
+                cos <= cos + sin_frac;
+                sin <= - cos_frac + sin;
                 i <= i + 1;
-                if(i < 10) state <= ???; else state <= ???;
+                if(i < 10) state <= S3; else state <= S8;
              end
              
             S8: begin
@@ -140,7 +140,7 @@ begin
                 state <= S13;
             end
             S13: begin
-                if(start == 1'b0) state <= ???; else state <= ???;
+                if(start == 0'b0) state <= S1; else state <= S13;
             end           
         endcase
     end

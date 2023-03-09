@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module cordic_rtl_TB;
 reg clock, reset, start;
 reg [11:0] angle_in;
@@ -12,7 +14,7 @@ cordic_rtl cordic( clock, reset, start, angle_in, ready_out, sin_out, cos_out);
 initial
     clock <= 1'b1;
 always
- #5 clock <= ~clock;
+ #1 clock <= ~clock;
  
 //Reset signal
 initial
@@ -24,7 +26,7 @@ end
 //Stimuli signals
 initial
 begin
-    angle_in <= 1.5 * 1024; //Modify value in fixed-point [2:10] 
+    angle_in <= 1 * 1024; //Modify value in fixed-point [2:10] 
     start <= 1'b0;
 #20 start <= 1'b1;
 #30 start <= 1'b0;
