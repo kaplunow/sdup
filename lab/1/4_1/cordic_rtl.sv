@@ -11,12 +11,7 @@ output reg ready_out; //result is ready
 output reg [W-1:0] sin_out, cos_out;
 
 //Cordic look-up table
-reg signed [11:0] atan[0:10] = {
-12'b001100100100, 12'b000111011011, 12'b000011111011, 
-12'b000001111111, 12'b000001000000, 12'b000000100000,
-12'b000000010000, 12'b000000001000, 12'b000000000100,
-12'b000000000010, 12'b000000000001 
-};
+reg signed [11:0] atan[0:10];
 
 //FSMD states
 parameter   S1 = 4'h01, S2 = 4'h02, S3 = 4'h03, S4 = 4'h04, S5 = 4'h05,
@@ -32,6 +27,21 @@ sin_9, cos_9;
 
 //Iterators
 reg [3:0] i, d;
+
+initial
+begin
+atan[0] = 12'b001100100100;
+atan[1] = 12'b000111011011; 
+atan[2] = 12'b000011111011;
+atan[3] = 12'b000001111111;
+atan[4] = 12'b000001000000;
+atan[5] = 12'b000000100000;
+atan[6] = 12'b000000010000; 
+atan[7] = 12'b000000001000; 
+atan[8] = 12'b000000000100;
+atan[9] = 12'b000000000010;
+atan[10] = 12'b000000000001; 
+end
 
 always @ (posedge clock)
 begin
@@ -140,7 +150,7 @@ begin
                 state <= S13;
             end
             S13: begin
-                if(start == 0'b0) state <= S1; else state <= S13;
+                if(start == 1'b0) state <= S1; else state <= S13;
             end           
         endcase
     end

@@ -33,6 +33,12 @@ begin
 end
 
 //Catch output
+initial
+begin
+	$dumpfile("cordic_rtl_TB");
+	$dumpvars(0, cordic_rtl_TB);
+	#1000 $finish;
+end
 always @ (posedge ready_out)
 begin
  #10 real_cos = cos_out;
