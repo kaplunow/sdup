@@ -222,8 +222,8 @@
 	    begin
 	      slv_reg0 <= 0;
 	      slv_reg1 <= 0;
-	      slv_reg2 <= 0;
-	      slv_reg3 <= 0;
+	      //slv_reg2 <= 0;
+	      //slv_reg3 <= 0;
 	    end 
 	  else begin
 	    if (slv_reg_wren)
@@ -248,14 +248,14 @@
 	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
 	                // Respective byte enables are asserted as per write strobes 
 	                // Slave register 2
-	                slv_reg2[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
+	                //slv_reg2[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
 	              end  
 	          2'h3:
 	            for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
 	              if ( S_AXI_WSTRB[byte_index] == 1 ) begin
 	                // Respective byte enables are asserted as per write strobes 
 	                // Slave register 3
-	                slv_reg3[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
+	                //slv_reg3[(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
 	              end  
 	          default : begin
 	                      slv_reg0 <= slv_reg0;
@@ -398,7 +398,33 @@
 	end    
 
 	// Add user logic here
-
+    //Reset signal for cordic processor
+    wire ARESET;
+    assign ARESET = ~S_AXI_ARESETN;
+    
+    //Transfer output from cordic processor to output registers
+    wire [C_S_AXI_DATA_WIDTH-1:0] slv_wire2;
+    wire [C_S_AXI_DATA_WIDTH-1:0] slv_wire3;
+    always @( posedge S_AXI_ACLK )
+    begin
+        slv_reg2 <= slv_wire2;
+        slv_reg3 <= slv_wire3;
+    end
+    
+    //Assign zeros to unused bits
+    assign slv_wire2[31:1] = 31'b0;
+    assign slv_wire3[15:12] = 4'b0;
+    assign slv_wire3[31:28] = 4'b0;
+    
+    cordic_rtl cordic_rtl_inst( S_AXI_ACLK, //clock,
+                                ARESET, //reset, 
+                                slv_reg0[0], //start 
+                                slv_reg1, //angle_in
+                                slv_wire2[0], //ready_out, 
+                                slv_wire3[11:0],//sin_out, 
+                                slv_wire3[27:16]//cos_out
+                                );
+    
 	// User logic ends
 
 	endmodule
