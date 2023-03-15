@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Wed Mar 15 19:55:40 2023
+-- Date        : Wed Mar 15 19:55:39 2023
 -- Host        : DESKTOP-J38DFM6 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               d:/Studia/Magisterka/1_semestr/sdup/lab/2_2/cordic_acc/cordic_acc.srcs/sources_1/bd/mb_design/ip/mb_design_dlmb_v10_0/mb_design_dlmb_v10_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top mb_design_dlmb_v10_0 -prefix
+--               mb_design_dlmb_v10_0_ mb_design_dlmb_v10_0_sim_netlist.vhdl
 -- Design      : mb_design_dlmb_v10_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -50,8 +50,6 @@ entity mb_design_dlmb_v10_0_lmb_v10 is
   attribute C_LMB_DWIDTH of mb_design_dlmb_v10_0_lmb_v10 : entity is 32;
   attribute C_LMB_NUM_SLAVES : integer;
   attribute C_LMB_NUM_SLAVES of mb_design_dlmb_v10_0_lmb_v10 : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of mb_design_dlmb_v10_0_lmb_v10 : entity is "lmb_v10";
 end mb_design_dlmb_v10_0_lmb_v10;
 
 architecture STRUCTURE of mb_design_dlmb_v10_0_lmb_v10 is
