@@ -9,6 +9,6 @@
 
 ### 2 - 10.3.2023 - Custom system design in FPGA laboratory
 
-This tutorial turned out to be very problematic. I strongly suggesting checking (before exporting hardware) whether you have all the file (see the picture below). Lack of it will create error on the LAST step
+This tutorial turned out to be very problematic. I strongly suggest checking (before exporting hardware) whether you have all the files (see the picture of missing file below). Lack of it will create error on the LAST STEP OF THE TUTORIAL
 
 ![A picture showing error causing lack of cortex file](/README_Pictures/Lab2_bad_file.png?raw=true "Missing cordic_ftl")
