@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 // Date        : Thu Mar 16 12:31:46 2023
 // Host        : DESKTOP-J38DFM6 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.srcs/sources_1/bd/mb_design/ip/mb_design_rst_clk_wiz_1_100M_0/mb_design_rst_clk_wiz_1_100M_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top mb_design_rst_clk_wiz_1_100M_0 -prefix
+//               mb_design_rst_clk_wiz_1_100M_0_ mb_design_rst_clk_wiz_1_100M_0_stub.v
 // Design      : mb_design_rst_clk_wiz_1_100M_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1

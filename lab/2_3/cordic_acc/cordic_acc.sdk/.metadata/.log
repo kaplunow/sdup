@@ -2127,3 +2127,282 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-03-16 12:27:34.637
 !MESSAGE Indexed 'cordic_test_bsp' (42 sources, 81 headers) in 2.26 sec: 1,446 declarations; 5,382 references; 45 unresolved inclusions; 5 syntax errors; 34 unresolved names (0.5%)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-16 12:41:04.157
+!MESSAGE Executed Webtalk command
+!SESSION 2023-03-16 12:44:26.516 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk
+
+!ENTRY org.eclipse.ui 2 0 2023-03-16 12:44:29.564
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-03-16 12:44:29.564
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2023-03-16 12:44:30.474
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-03-16 12:44:30.475
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:41.419
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:41.420
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:42.029
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:42.030
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:42.039
+!MESSAGE XSCT Command: [setws C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:42.045
+!MESSAGE XSCT command with result: [setws C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:42.108
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf], Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.376
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.388
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.391
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.392
+!MESSAGE XSCT Command: [hsi get_hw_files -of_object [openhw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf ; hsi current_hw_design]], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.402
+!MESSAGE XSCT command with result: [hsi get_hw_files -of_object [openhw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf ; hsi current_hw_design]], Result: [null, mb_design.hwh mb_design_bd.tcl]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.419
+!MESSAGE XSCT Command: [::hsi::utils::closehw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.425
+!MESSAGE XSCT command with result: [::hsi::utils::closehw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.426
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.545
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.548
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/wolos/AppData/Local/Temp/system7512458768024594113.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.631
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/wolos/AppData/Local/Temp/system7512458768024594113.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.638
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.646
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_gpio_angle": {"hier_name": "axi_gpio_angle",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_cos": {"hier_name": "axi_gpio_cos",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_sin": {"hier_name": "axi_gpio_sin",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"cordic_ip_0": {"hier_name": "cordic_ip_0",
+"type": "cordic_ip",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.651
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/wolos/AppData/Local/Temp/system7512458768024594113.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:44.659
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/wolos/AppData/Local/Temp/system7512458768024594113.hdf], Result: [null, {"axi_gpio_angle": {"hier_name": "axi_gpio_angle",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_cos": {"hier_name": "axi_gpio_cos",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_sin": {"hier_name": "axi_gpio_sin",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"cordic_ip_0": {"hier_name": "cordic_ip_0",
+"type": "cordic_ip",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:45.447
+!MESSAGE XSCT Command: [::hsi::utils::sync_sw_with_hw_changes -newhw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf -oldhw C:/Users/wolos/AppData/Local/Temp/system7512458768024594113.hdf -sw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/cordic_test_bsp/system.mss -dir C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/cordic_test_bsp], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:47.925
+!MESSAGE XSCT command with result: [::hsi::utils::sync_sw_with_hw_changes -newhw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf -oldhw C:/Users/wolos/AppData/Local/Temp/system7512458768024594113.hdf -sw C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/cordic_test_bsp/system.mss -dir C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/cordic_test_bsp], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.939
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.943
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Result: [null, 1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.945
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.953
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.955
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.959
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.961
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.967
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.968
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.973
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.976
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.982
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.985
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.991
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Result: [null, 0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.993
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-16 12:44:48.998
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Result: [null, 0]. Thread: ModalContext

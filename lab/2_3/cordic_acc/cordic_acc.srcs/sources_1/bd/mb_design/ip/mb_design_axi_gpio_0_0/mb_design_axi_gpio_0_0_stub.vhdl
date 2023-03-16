@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Thu Mar 16 12:24:24 2023
+-- Date        : Thu Mar 16 12:24:23 2023
 -- Host        : DESKTOP-J38DFM6 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.srcs/sources_1/bd/mb_design/ip/mb_design_axi_gpio_0_0/mb_design_axi_gpio_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top mb_design_axi_gpio_0_0 -prefix
+--               mb_design_axi_gpio_0_0_ mb_design_axi_gpio_0_0_stub.vhdl
 -- Design      : mb_design_axi_gpio_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

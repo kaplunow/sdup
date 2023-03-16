@@ -46,9 +46,6 @@ vlog -work xil_defaultlib -64 -incr -sv "+incdir+../../../../cordic_acc.srcs/sou
 vcom -work xpm -64 -93 \
 "C:/MyPrograms/Vivado/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd" \
 
-vlog -work xil_defaultlib -64 -incr "+incdir+../../../../cordic_acc.srcs/sources_1/bd/mb_design/ipshared/85a3" "+incdir+../../../../cordic_acc.srcs/sources_1/bd/mb_design/ipshared/ec67/hdl" \
-"../../../bd/mb_design/sim/mb_design.v" \
-
 vcom -work microblaze_v11_0_0 -64 -93 \
 "../../../../cordic_acc.srcs/sources_1/bd/mb_design/ipshared/2ed1/hdl/microblaze_v11_0_vh_rfs.vhd" \
 
@@ -139,6 +136,7 @@ vlog -work axi_crossbar_v2_1_19 -64 -incr "+incdir+../../../../cordic_acc.srcs/s
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../cordic_acc.srcs/sources_1/bd/mb_design/ipshared/85a3" "+incdir+../../../../cordic_acc.srcs/sources_1/bd/mb_design/ipshared/ec67/hdl" \
 "../../../bd/mb_design/ip/mb_design_xbar_0/sim/mb_design_xbar_0.v" \
+"../../../bd/mb_design/sim/mb_design.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

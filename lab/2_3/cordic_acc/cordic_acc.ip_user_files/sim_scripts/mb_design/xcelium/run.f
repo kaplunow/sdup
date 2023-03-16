@@ -5,9 +5,6 @@
 -makelib xcelium_lib/xpm \
   "C:/MyPrograms/Vivado/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_design/sim/mb_design.v" \
--endlib
 -makelib xcelium_lib/microblaze_v11_0_0 \
   "../../../../cordic_acc.srcs/sources_1/bd/mb_design/ipshared/2ed1/hdl/microblaze_v11_0_vh_rfs.vhd" \
 -endlib
@@ -98,6 +95,7 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/mb_design/ip/mb_design_xbar_0/sim/mb_design_xbar_0.v" \
+  "../../../bd/mb_design/sim/mb_design.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v
