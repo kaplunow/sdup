@@ -1,0 +1,58 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Mar 16 22:15:25 2023
+| Host         : DESKTOP-J38DFM6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_cordic_ip_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_design_cordic_ip_0_0 from xilinx.com:user:cordic_ip:1.2 (Rev. 1) to xilinx.com:user:cordic_ip:1.3 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Mar 16 21:59:47 2023
+| Host         : DESKTOP-J38DFM6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_cordic_ip_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_design_cordic_ip_0_0 from xilinx.com:user:cordic_ip:1.1 (Rev. 1) to xilinx.com:user:cordic_ip:1.2 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Mar 16 21:37:43 2023
+| Host         : DESKTOP-J38DFM6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_cordic_ip_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_design_cordic_ip_0_0 from xilinx.com:user:cordic_ip:1.0 (Rev. 1) to xilinx.com:user:cordic_ip:1.1 (Rev. 1)
+

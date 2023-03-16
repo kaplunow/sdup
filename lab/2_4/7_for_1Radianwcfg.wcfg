@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mb_design_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lmb_bram_if_funcs" />
+            <top_module name="mb_design_tb" />
+            <top_module name="mdm_funcs" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="10999991775fs"></ZoomStartTime>
+      <ZoomEndTime time="11000001466fs"></ZoomEndTime>
+      <Cursor1Time time="11000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/mb_design_tb/clk_n" type="logic">
+      <obj_property name="ElementShortName">clk_n</obj_property>
+      <obj_property name="ObjectShortName">clk_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mb_design_tb/clk_p" type="logic">
+      <obj_property name="ElementShortName">clk_p</obj_property>
+      <obj_property name="ObjectShortName">clk_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mb_design_tb/angle" type="array">
+      <obj_property name="ElementShortName">angle[11:0]</obj_property>
+      <obj_property name="ObjectShortName">angle[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mb_design_tb/sin" type="array">
+      <obj_property name="ElementShortName">sin[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sin[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mb_design_tb/cos" type="array">
+      <obj_property name="ElementShortName">cos[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cos[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mb_design_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mb_design_tb/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mb_design_tb/r_angle" type="other">
+      <obj_property name="ElementShortName">r_angle</obj_property>
+      <obj_property name="ObjectShortName">r_angle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mb_design_tb/r_sin" type="other">
+      <obj_property name="ElementShortName">r_sin</obj_property>
+      <obj_property name="ObjectShortName">r_sin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mb_design_tb/r_cos" type="other">
+      <obj_property name="ElementShortName">r_cos</obj_property>
+      <obj_property name="ObjectShortName">r_cos</obj_property>
+   </wvobject>
+</wave_config>
