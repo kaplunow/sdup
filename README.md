@@ -11,4 +11,4 @@
 
 This tutorial turned out to be very problematic. I strongly suggesting checking (before exporting hardware) whether you have all the file (see the picture below). Lack of it will create error on the LAST step
 
-![A picture showing error causing lack of cortex file](/README_Pictures/Lab2_bad_file.png?raw=true "Optional Title")
+![A picture showing error causing lack of cortex file](/README_Pictures/Lab2_bad_file.png?raw=true "Missing cordic_ftl")
