@@ -1,0 +1,6 @@
+12:25:21 INFO  : Registering command handlers for SDK TCF services
+12:25:23 INFO  : Launching XSCT server: xsct.bat -interactive C:\Studia\Magisterka\1_semestr\sdup\lab\2_3\cordic_acc\cordic_acc.sdk\temp_xsdb_launch_script.tcl
+12:25:30 INFO  : XSCT server has started successfully.
+12:25:36 INFO  : Successfully done setting XSCT server connection channel  
+12:25:36 INFO  : Processing command line option -hwspec C:/Studia/Magisterka/1_semestr/sdup/lab/2_3/cordic_acc/cordic_acc.sdk/mb_design_wrapper.hdf.
+12:25:36 INFO  : Successfully done setting SDK workspace  

@@ -1,0 +1,6 @@
+12:34:44 **** Incremental Build of configuration Debug for project cordic_test ****
+make all 
+make: Nothing to be done for 'all'.
+
+12:34:44 Build Finished (took 238ms)
+
