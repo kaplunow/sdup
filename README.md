@@ -11,4 +11,6 @@
 
 This tutorial turned out to be very problematic. I strongly suggest checking (before exporting hardware) whether you have all the files (see the picture of missing file below). Lack of it will create error on the LAST STEP OF THE TUTORIAL
 
+This problem was solved by NOT including Verilog Synthesis and Verilog Simulation files in Repackaging-IP.
+
 ![A picture showing error causing lack of cortex file](/README_Pictures/Lab2_bad_file.png?raw=true "Missing cordic_ftl")
