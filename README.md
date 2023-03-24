@@ -1,8 +1,11 @@
-#Systemy Dedykowany w Układach Programowalnych 
+## Systemy Dedykowany w Układach Programowalnych 
+
+
 ## Contents
 <!-- toc -->
 - [1 - 3.3.2023](#1)
 - [2 - 10.3.2023](#2)
+- [3 - 24.3.2023](#3)
 <!-- tocstop -->
 
 ### 1 - 3.3.2023 - The Sequential cordic processor for sine & cosine calculations.
@@ -14,3 +17,5 @@ This tutorial turned out to be very problematic. I strongly suggest checking (be
 This problem was solved by NOT including Verilog Synthesis and Verilog Simulation files in Repackaging-IP.
 
 ![A picture showing error causing lack of cortex file](/README_Pictures/Lab2_bad_file.png?raw=true "Missing cordic_ftl")
+
+### 3 - 24.3.2023 - T3_cordic_vivado_zedboard
