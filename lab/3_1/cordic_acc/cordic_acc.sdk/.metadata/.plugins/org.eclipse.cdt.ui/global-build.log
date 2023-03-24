@@ -172,3 +172,546 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
+13:27:20 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:28:03 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:28:06 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:28:26 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:28:27 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:30:34 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:32:58 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:35:44 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:37:21 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:39:40 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:41:02 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:77:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:77:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: cordic_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cordic_demo_app_bsp/ps7_cortexa9_0/lib -o "cordic_demo_app.elf"  ./calculateCordicVal.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cordic_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cordic_demo_app.elf  |tee "cordic_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26040	   1144	  22568	  49752	   c258	cordic_demo_app.elf
+'Finished building: cordic_demo_app.elf.size'
+' '
+13:41:30 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:77:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:77:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: cordic_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cordic_demo_app_bsp/ps7_cortexa9_0/lib -o "cordic_demo_app.elf"  ./calculateCordicVal.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cordic_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cordic_demo_app.elf  |tee "cordic_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26040	   1144	  22568	  49752	   c258	cordic_demo_app.elf
+'Finished building: cordic_demo_app.elf.size'
+' '
+13:41:47 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:42:04 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:77:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:77:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: cordic_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cordic_demo_app_bsp/ps7_cortexa9_0/lib -o "cordic_demo_app.elf"  ./calculateCordicVal.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cordic_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cordic_demo_app.elf  |tee "cordic_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26040	   1144	  22568	  49752	   c258	cordic_demo_app.elf
+'Finished building: cordic_demo_app.elf.size'
+' '
+13:43:45 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:50:28 **** Auto Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:89:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:89:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: cordic_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cordic_demo_app_bsp/ps7_cortexa9_0/lib -o "cordic_demo_app.elf"  ./calculateCordicVal.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cordic_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cordic_demo_app.elf  |tee "cordic_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26232	   1144	  22568	  49944	   c318	cordic_demo_app.elf
+'Finished building: cordic_demo_app.elf.size'
+' '
+13:50:50 **** Auto Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:89:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:89:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: cordic_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cordic_demo_app_bsp/ps7_cortexa9_0/lib -o "cordic_demo_app.elf"  ./calculateCordicVal.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cordic_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cordic_demo_app.elf  |tee "cordic_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26232	   1144	  22568	  49944	   c318	cordic_demo_app.elf
+'Finished building: cordic_demo_app.elf.size'
+' '
+13:50:59 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:58:15 **** Auto Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:103:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:103:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:76:5: warning: variable 'quarter' set but not used [-Wunused-but-set-variable]
+ u32 quarter = 1;
+     ^~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: cordic_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cordic_demo_app_bsp/ps7_cortexa9_0/lib -o "cordic_demo_app.elf"  ./calculateCordicVal.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cordic_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cordic_demo_app.elf  |tee "cordic_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26424	   1144	  22568	  50136	   c3d8	cordic_demo_app.elf
+'Finished building: cordic_demo_app.elf.size'
+' '
+14:01:50 **** Auto Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:103:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:103:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:113:6: error: expected expression before '}' token
+      }
+      ^
+make: *** [subdir.mk:26: main.o] Error 1
+14:01:52 **** Auto Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:103:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:103:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:112:6: error: expected expression before '}' token
+      }
+      ^
+make: *** [subdir.mk:26: main.o] Error 1
+14:02:08 **** Auto Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:103:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:103:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:112:6: error: expected expression before '}' token
+      }
+      ^
+make: *** [subdir.mk:26: main.o] Error 1
+14:02:42 **** Auto Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:104:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:104:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: cordic_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cordic_demo_app_bsp/ps7_cortexa9_0/lib -o "cordic_demo_app.elf"  ./calculateCordicVal.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cordic_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cordic_demo_app.elf  |tee "cordic_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26424	   1144	  22568	  50136	   c3d8	cordic_demo_app.elf
+'Finished building: cordic_demo_app.elf.size'
+' '
+14:03:53 **** Auto Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:104:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:104:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: cordic_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cordic_demo_app_bsp/ps7_cortexa9_0/lib -o "cordic_demo_app.elf"  ./calculateCordicVal.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cordic_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cordic_demo_app.elf  |tee "cordic_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26488	   1144	  22568	  50200	   c418	cordic_demo_app.elf
+'Finished building: cordic_demo_app.elf.size'
+' '
+14:04:07 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:04:08 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:08:20 **** Auto Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:104:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:104:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: cordic_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cordic_demo_app_bsp/ps7_cortexa9_0/lib -o "cordic_demo_app.elf"  ./calculateCordicVal.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cordic_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cordic_demo_app.elf  |tee "cordic_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26488	   1144	  22568	  50200	   c418	cordic_demo_app.elf
+'Finished building: cordic_demo_app.elf.size'
+' '
+14:08:23 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:09:02 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:09:23 **** Auto Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:104:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:104:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: cordic_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cordic_demo_app_bsp/ps7_cortexa9_0/lib -o "cordic_demo_app.elf"  ./calculateCordicVal.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cordic_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cordic_demo_app.elf  |tee "cordic_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26488	   1144	  22568	  50200	   c418	cordic_demo_app.elf
+'Finished building: cordic_demo_app.elf.size'
+' '
+14:09:34 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:11:15 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:11:52 **** Auto Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cordic_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:104:32: warning: pointer targets in passing argument 2 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+../main.c:104:38: warning: pointer targets in passing argument 3 of 'calculateCordicVal' differ in signedness [-Wpointer-sign]
+      calculateCordicVal(angle, &sin, &cos);
+                                      ^
+../main.c:26:5: note: expected 'u32 * {aka long unsigned int *}' but argument is of type 's32 * {aka long int *}'
+ int calculateCordicVal(u32 angle, u32* sin,  u32* cos);
+     ^~~~~~~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: cordic_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cordic_demo_app_bsp/ps7_cortexa9_0/lib -o "cordic_demo_app.elf"  ./calculateCordicVal.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cordic_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cordic_demo_app.elf  |tee "cordic_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26488	   1144	  22568	  50200	   c418	cordic_demo_app.elf
+'Finished building: cordic_demo_app.elf.size'
+' '
+14:11:54 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:12:29 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

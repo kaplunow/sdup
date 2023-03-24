@@ -1,8 +1,8 @@
-12:19:26 **** Incremental Build of configuration Debug for project cordic_demo_app ****
+14:12:29 **** Incremental Build of configuration Debug for project cordic_demo_app ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
 
-12:19:26 Build Finished (took 296ms)
+14:12:29 Build Finished (took 270ms)
 

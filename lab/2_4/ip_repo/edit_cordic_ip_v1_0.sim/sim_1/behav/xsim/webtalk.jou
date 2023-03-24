@@ -2,11 +2,11 @@
 # Webtalk v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Mar 16 21:56:30 2023
-# Process ID: 17728
-# Current directory: c:/sdup/lab/2_4/ip_repo/edit_cordic_ip_v1_0.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source c:/sdup/lab/2_4/ip_repo/edit_cordic_ip_v1_0.sim/sim_1/behav/xsim/xsim.dir/cordic_ip_v1_0_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: c:/sdup/lab/2_4/ip_repo/edit_cordic_ip_v1_0.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: c:/sdup/lab/2_4/ip_repo/edit_cordic_ip_v1_0.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Fri Mar 24 13:09:05 2023
+# Process ID: 7684
+# Current directory: C:/sdup/lab/2_4/ip_repo/edit_cordic_ip_v1_0.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/sdup/lab/2_4/ip_repo/edit_cordic_ip_v1_0.sim/sim_1/behav/xsim/xsim.dir/cordic_ip_v1_0_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/sdup/lab/2_4/ip_repo/edit_cordic_ip_v1_0.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/sdup/lab/2_4/ip_repo/edit_cordic_ip_v1_0.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source c:/sdup/lab/2_4/ip_repo/edit_cordic_ip_v1_0.sim/sim_1/behav/xsim/xsim.dir/cordic_ip_v1_0_behav/webtalk/xsim_webtalk.tcl -notrace
+source C:/sdup/lab/2_4/ip_repo/edit_cordic_ip_v1_0.sim/sim_1/behav/xsim/xsim.dir/cordic_ip_v1_0_behav/webtalk/xsim_webtalk.tcl -notrace

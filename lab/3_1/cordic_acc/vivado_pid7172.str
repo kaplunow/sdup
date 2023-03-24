@@ -1,0 +1,149 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 7172
+License: Customer
+
+Current time: 	Fri Mar 24 13:15:12 CET 2023
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 97 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/MyPrograms/Vivado/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/MyPrograms/Vivado/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	wolos
+User home directory: C:/Users/wolos
+User working directory: C:/sdup/lab/3_1/cordic_acc
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/MyPrograms/Vivado/Vivado
+HDI_APPROOT: C:/MyPrograms/Vivado/Vivado/2018.3
+RDI_DATADIR: C:/MyPrograms/Vivado/Vivado/2018.3/data
+RDI_BINDIR: C:/MyPrograms/Vivado/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/wolos/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/wolos/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/wolos/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/MyPrograms/Vivado/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/sdup/lab/3_1/cordic_acc/vivado.log
+Vivado journal file location: 	C:/sdup/lab/3_1/cordic_acc/vivado.jou
+Engine tmp dir: 	C:/sdup/lab/3_1/cordic_acc/.Xil/Vivado-7172-DESKTOP-J38DFM6
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/MyPrograms/Vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/MyPrograms/Vivado/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/MyPrograms/Vivado/Vivado/2018.3
+XILINX_SDK: C:/MyPrograms/Vivado/SDK/2018.3
+XILINX_VIVADO: C:/MyPrograms/Vivado/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/MyPrograms/Vivado/Vivado/2018.3
+
+
+GUI allocated memory:	279 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 654 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\sdup\lab\3_1\cordic_acc\cordic_acc.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project C:/sdup/lab/3_1/cordic_acc/cordic_acc.xpr 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 677 MB. GUI used memory: 46 MB. Current time: 3/24/23, 1:15:14 PM CET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 104 MB (+107059kb) [00:00:14]
+// [Engine Memory]: 677 MB (+558316kb) [00:00:14]
+// [GUI Memory]: 111 MB (+1342kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  4784 ms.
+// Tcl Message: open_project C:/sdup/lab/3_1/cordic_acc/cordic_acc.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/sdup/lab/3_1'. 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/MyPrograms/Vivado/Vivado/2018.3/data/ip'. 
+// [Engine Memory]: 723 MB (+12739kb) [00:00:18]
+// WARNING: HEventQueue.dispatchEvent() is taking  1228 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 762.402 ; gain = 31.848 
+// Project name: cordic_acc; location: C:/sdup/lab/3_1/cordic_acc; part: xc7z020clg484-1
+// [Engine Memory]: 898 MB (+145723kb) [00:00:21]
+dismissDialog("Open Project"); // bx (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cp): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+// 'o' command handler elapsed time: 5 seconds
+dismissDialog("Launch SDK"); // aa (cp)
+// Tcl Message: launch_sdk -workspace C:/sdup/lab/3_1/cordic_acc/cordic_acc.sdk -hwspec C:/sdup/lab/3_1/cordic_acc/cordic_acc.sdk/design_acc_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/sdup/lab/3_1/cordic_acc/cordic_acc.sdk -hwspec C:/sdup/lab/3_1/cordic_acc/cordic_acc.sdk/design_acc_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2587 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3884 ms. Increasing delay to 4000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 468ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5042 ms. Increasing delay to 15126 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 43 ms. Decreasing delay to 2043 ms.
+// [GUI Memory]: 120 MB (+3128kb) [00:11:28]
+// Elapsed time: 1268 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cp): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cp)
+// Tcl Message: launch_sdk -workspace C:/sdup/lab/3_1/cordic_acc/cordic_acc.sdk -hwspec C:/sdup/lab/3_1/cordic_acc/cordic_acc.sdk/design_acc_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/sdup/lab/3_1/cordic_acc/cordic_acc.sdk -hwspec C:/sdup/lab/3_1/cordic_acc/cordic_acc.sdk/design_acc_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 932 MB. GUI used memory: 59 MB. Current time: 3/24/23, 1:45:15 PM CET

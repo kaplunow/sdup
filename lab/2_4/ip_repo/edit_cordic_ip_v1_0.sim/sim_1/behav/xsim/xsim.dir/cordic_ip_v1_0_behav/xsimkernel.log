@@ -1,7 +1,7 @@
-Running: xsim.dir/cordic_ip_v1_0_behav/xsimk.exe -simmode gui -wdb cordic_ip_v1_0_behav.wdb -simrunnum 0 -socket 59872
+Running: xsim.dir/cordic_ip_v1_0_behav/xsimk.exe -simmode gui -wdb cordic_ip_v1_0_behav.wdb -simrunnum 0 -socket 57576
 Design successfully loaded
-Design Loading Memory Usage: 5884 KB (Peak: 5884 KB)
-Design Loading CPU Usage: 30 ms
+Design Loading Memory Usage: 5892 KB (Peak: 5892 KB)
+Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 6484 KB (Peak: 6484 KB)
-Simulation CPU Usage: 46 ms
+Simulation Memory Usage: 6524 KB (Peak: 6524 KB)
+Simulation CPU Usage: 62 ms

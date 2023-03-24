@@ -39,6 +39,18 @@ char8 c;
     return ret;
 }
 
+u32 read3DigitDecVal(){
+u32 ret = 0;
+char8 c;
+    outbyte ( c = inbyte() );
+    ret += 100 * (c - '0');
+    outbyte ( c = inbyte() );
+    ret += 10 * (c - '0');
+    outbyte ( c = inbyte() );
+    ret += (c - '0');
+    return ret;
+}
+
 /**
  *  printDecimalFXPVal - print fixed-point value in decimal format
  *  val - value to print out in radix-2 fixed-point
@@ -61,20 +73,50 @@ int main()
 {
 u32 angle = 0;
 s32 sin, cos;
-
+u32 quarter = 1;
+u32 temp;
 
     init_platform();
 
     while(1){
-    	print("Enter angle (in degrees, two digits 00 to 90)");
-    	angle = read2DigitDecVal();
+    	print("Enter angle (in degrees, two digits 000 to 360)");
+    	angle = read3DigitDecVal();
     	print("\n\r");
+
+    	if (angle>=90 && angle <180) {
+    		angle-=90;
+    		quarter = 2;
+    	}
+    	else if (angle >= 180 && angle < 270) {
+    		angle-=180;
+    		quarter = 3;
+    	}
+    	else if (angle >= 270 && angle <= 360) {
+    		angle-=270;
+    		quarter = 4;
+    	}
+
     	//Convert to radians fxp(12:10)
     	angle *= 1024; 	//Fixed-point (12:10)
     	angle = (angle * PI ) >> 10; //Fixed-point multiplication
     	angle /= 180; 	//angle in radians
 
     	calculateCordicVal(angle, &sin, &cos);
+
+    	if (quarter == 2) {
+    		temp = sin;
+    		sin = cos;
+    		cos = temp * (-1);
+    	}
+    	else if (quarter == 3) {
+    		sin=sin*(-1);
+    		cos=cos*(-1);
+    	}
+    	else if (quarter == 4) {
+    		temp=sin;
+    		sin=cos*(-1);
+    		cos=temp;
+    	}
 
     	print("Sinus value is ");
     	printDecimalFXPVal(sin, 1024, 2);
