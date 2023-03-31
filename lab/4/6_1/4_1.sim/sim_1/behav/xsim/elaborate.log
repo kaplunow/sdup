@@ -1,7 +1,26 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/MyPrograms/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2da29350b8f5445089604a3ea095e76e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cordic_pipe_rtl_TB_behav xil_defaultlib.cordic_pipe_rtl_TB xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2da29350b8f5445089604a3ea095e76e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cordic_pipe_rtl_TB_behav xil_defaultlib.cordic_pipe_rtl_TB xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/materialy/studia/semestry/8/sdup/lab/4/6_1/4_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cordic_step
+Compiling module xil_defaultlib.cordic_step(step=1)
+Compiling module xil_defaultlib.cordic_step(step=2)
+Compiling module xil_defaultlib.cordic_step(step=3)
+Compiling module xil_defaultlib.cordic_step(step=4)
+Compiling module xil_defaultlib.cordic_step(step=5)
+Compiling module xil_defaultlib.cordic_step(step=6)
+Compiling module xil_defaultlib.cordic_step(step=7)
+Compiling module xil_defaultlib.cordic_step(step=8)
+Compiling module xil_defaultlib.cordic_step(step=9)
+Compiling module xil_defaultlib.cordic_step(step=10)
+Compiling module xil_defaultlib.mul_Kn
+Compiling module xil_defaultlib.cordic_pipe_rtl
+Compiling module xil_defaultlib.cordic_pipe_rtl_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cordic_pipe_rtl_TB_behav

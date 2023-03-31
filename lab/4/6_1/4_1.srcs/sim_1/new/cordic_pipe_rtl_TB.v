@@ -34,6 +34,6 @@ begin
 	real_sin = sin_out;
 	real_cos = real_cos / 1024;
 	real_sin = real_sin / 1024;
-	$display("Real values: sin=%f, cos=%f", real_sin, real_cos);
+	$display("Angle=%f Real values: sin=%f, cos=%f", angle, real_sin, real_cos);
 end
 endmodule
