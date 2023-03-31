@@ -17,14 +17,14 @@ begin
 	begin
 		if(t_angle > angle_in)
 		begin
-			cos_out <= cos_in - (sin_in >>> ???); //Arithmetic shift !!!
-			sin_out <= (cos_in >>> ???) + sin_in;
+			cos_out <= cos_in - (sin_in >>> step); //Arithmetic shift !!!
+			sin_out <= (cos_in >>> step) + sin_in;
 			angle_out <= angle_in + atan;
 		end
 		else
 		begin
-			cos_out <= cos_in + (sin_in >>> ???);
-			sin_out <= -(cos_in >>> ???) + sin_in;
+			cos_out <= cos_in + (sin_in >>> step);
+			sin_out <= -(cos_in >>> step) + sin_in;
 			angle_out <= angle_in - atan;
 		end
 	t_angle_out <= t_angle;

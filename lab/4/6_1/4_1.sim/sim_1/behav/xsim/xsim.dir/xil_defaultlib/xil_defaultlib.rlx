@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/sdup/lab/4/6_1/4_1.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/sdup/lab/4/6_1/4_1.srcs/sim_1/new/cordic_pipe_rtl_TB.v,1680257699,systemVerilog,,,,cordic_pipe_rtl_TB,,,,,,,,
+C:/sdup/lab/4/6_1/4_1.srcs/sources_1/new/cordic_pipe_rtl.v,1680257699,systemVerilog,,C:/sdup/lab/4/6_1/4_1.srcs/sim_1/new/cordic_pipe_rtl_TB.v,,cordic_pipe_rtl,,,,,,,,
+C:/sdup/lab/4/6_1/4_1.srcs/sources_1/new/cordic_step.v,1680258035,verilog,,C:/sdup/lab/4/6_1/4_1.srcs/sources_1/new/mul_Kn.v,,cordic_step,,,,,,,,
+C:/sdup/lab/4/6_1/4_1.srcs/sources_1/new/mul_Kn.v,1680258108,verilog,,,,mul_Kn,,,,,,,,

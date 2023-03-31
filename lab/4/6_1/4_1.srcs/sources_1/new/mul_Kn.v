@@ -20,14 +20,14 @@ begin
 	val = value_in; val_0 <= val; val_2 <= val << 2; val_4 <= val << 4;
 	val_5 <= val << 5; val_7 <= val << 7; val_9 <= val << 9;
 //Step S5
-	val_0_2 <= val_0 - val_2; val_4_5 <= val_4 - ???; val_7_9 <= val_7 + ???;
+	val_0_2 <= val_0 - val_2; val_4_5 <= val_4 - val_5; val_7_9 <= val_7 + val_9;
 //Step S6
 	val_0_2_4_5 <= val_0_2 + val_4_5;
 	val_7_9_d <= val_7_9; //delay val_7_9 which is necessary in the 4-th pipe stage
 //Step S7
 	val_0_2_4_5_7_9 = val_0_2_4_5 + val_7_9_d;
 //Step S8
-	value_out <= ??? >>> FXP_SHIFT;
+	value_out <= val_0_2_4_5_7_9 >>> FXP_SHIFT;
 	end
 end
 endmodule
