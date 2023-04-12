@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="eclipse_module_rtl_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="eclipse_module_rtl_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1173000001fs"></ZoomEndTime>
+      <Cursor1Time time="170015000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="189"></NameColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/eclipse_module_rtl_tb/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/eclipse_module_rtl_tb/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/eclipse_module_rtl_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/eclipse_module_rtl_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/eclipse_module_rtl_tb/angle_in" type="array">
+      <obj_property name="ElementShortName">angle_in[11:0]</obj_property>
+      <obj_property name="ObjectShortName">angle_in[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/eclipse_module_rtl_tb/angle" type="other">
+      <obj_property name="ElementShortName">angle</obj_property>
+      <obj_property name="ObjectShortName">angle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/eclipse_module_rtl_tb/sin_out_ellipse" type="array">
+      <obj_property name="ElementShortName">sin_out_ellipse[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sin_out_ellipse[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/eclipse_module_rtl_tb/cos_out_ellipse" type="array">
+      <obj_property name="ElementShortName">cos_out_ellipse[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cos_out_ellipse[11:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/eclipse_module_rtl_tb/valid_out_eclipse" type="logic">
+      <obj_property name="ElementShortName">valid_out_eclipse</obj_property>
+      <obj_property name="ObjectShortName">valid_out_eclipse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/eclipse_module_rtl_tb/real_cos" type="other">
+      <obj_property name="ElementShortName">real_cos</obj_property>
+      <obj_property name="ObjectShortName">real_cos</obj_property>
+   </wvobject>
+   <wvobject fp_name="/eclipse_module_rtl_tb/real_sin" type="other">
+      <obj_property name="ElementShortName">real_sin</obj_property>
+      <obj_property name="ObjectShortName">real_sin</obj_property>
+   </wvobject>
+</wave_config>

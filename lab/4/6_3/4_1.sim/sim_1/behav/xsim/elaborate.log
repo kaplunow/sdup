@@ -1,0 +1,40 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/MyPrograms/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2da29350b8f5445089604a3ea095e76e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot eclipse_module_rtl_tb_behav xil_defaultlib.eclipse_module_rtl_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/cordic_pipe_rtl.v" Line 5. Module cordic_pipe_rtl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/cordic_step.v" Line 6. Module cordic_step doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/cordic_step.v" Line 6. Module cordic_step(step=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/cordic_step.v" Line 6. Module cordic_step(step=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/cordic_step.v" Line 6. Module cordic_step(step=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/cordic_step.v" Line 6. Module cordic_step(step=4) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/cordic_step.v" Line 6. Module cordic_step(step=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/cordic_step.v" Line 6. Module cordic_step(step=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/cordic_step.v" Line 6. Module cordic_step(step=7) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/cordic_step.v" Line 6. Module cordic_step(step=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/cordic_step.v" Line 6. Module cordic_step(step=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/cordic_step.v" Line 6. Module cordic_step(step=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/mul_Kn.v" Line 6. Module mul_Kn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/sdup/lab/4/6_3/4_1.srcs/sources_1/new/mul_Kn.v" Line 6. Module mul_Kn doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cordic_step
+Compiling module xil_defaultlib.cordic_step(step=1)
+Compiling module xil_defaultlib.cordic_step(step=2)
+Compiling module xil_defaultlib.cordic_step(step=3)
+Compiling module xil_defaultlib.cordic_step(step=4)
+Compiling module xil_defaultlib.cordic_step(step=5)
+Compiling module xil_defaultlib.cordic_step(step=6)
+Compiling module xil_defaultlib.cordic_step(step=7)
+Compiling module xil_defaultlib.cordic_step(step=8)
+Compiling module xil_defaultlib.cordic_step(step=9)
+Compiling module xil_defaultlib.cordic_step(step=10)
+Compiling module xil_defaultlib.mul_Kn
+Compiling module xil_defaultlib.cordic_pipe_rtl
+Compiling module xil_defaultlib.eclipse_module_rtl
+Compiling module xil_defaultlib.eclipse_module_rtl_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot eclipse_module_rtl_tb_behav

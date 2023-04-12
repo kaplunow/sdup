@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar 31 12:15:18 2023
+# Process ID: 10832
+# Current directory: C:/sdup/lab/4/6_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23708 C:\sdup\lab\4\6_1\4_1.xpr
+# Log file: C:/sdup/lab/4/6_1/vivado.log
+# Journal file: C:/sdup/lab/4/6_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/sdup/lab/4/6_1/4_1.xpr
+update_compile_order -fileset sources_1
+set_property file_type SystemVerilog [get_files  C:/sdup/lab/4/6_1/4_1.srcs/sim_1/new/cordic_pipe_rtl_TB.v]
+launch_simulation
+set_property file_type SystemVerilog [get_files  C:/sdup/lab/4/6_1/4_1.srcs/sources_1/new/cordic_pipe_rtl.v]
+launch_simulation
+source cordic_pipe_rtl_TB.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+source cordic_pipe_rtl_TB.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim

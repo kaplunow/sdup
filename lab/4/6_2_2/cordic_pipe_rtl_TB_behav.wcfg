@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cordic_pipe_rtl_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cordic_pipe_rtl_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="399958458333fs"></ZoomStartTime>
+      <ZoomEndTime time="400008308334fs"></ZoomEndTime>
+      <Cursor1Time time="400000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="140"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/cordic_pipe_rtl_TB/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_pipe_rtl_TB/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_pipe_rtl_TB/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_pipe_rtl_TB/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_pipe_rtl_TB/angle_in" type="array">
+      <obj_property name="ElementShortName">angle_in[11:0]</obj_property>
+      <obj_property name="ObjectShortName">angle_in[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_pipe_rtl_TB/angle" type="other">
+      <obj_property name="ElementShortName">angle</obj_property>
+      <obj_property name="ObjectShortName">angle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_pipe_rtl_TB/valid_out" type="logic">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_pipe_rtl_TB/real_cos" type="other">
+      <obj_property name="ElementShortName">real_cos</obj_property>
+      <obj_property name="ObjectShortName">real_cos</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_pipe_rtl_TB/real_sin" type="other">
+      <obj_property name="ElementShortName">real_sin</obj_property>
+      <obj_property name="ObjectShortName">real_sin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_pipe_rtl_TB/eclipse_sin_out" type="array">
+      <obj_property name="ElementShortName">eclipse_sin_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">eclipse_sin_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_pipe_rtl_TB/cordic/mul_Kn_sin/value_out" type="array">
+      <obj_property name="ElementShortName">value_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">value_out[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_pipe_rtl_TB/eclipse_cos_out" type="array">
+      <obj_property name="ElementShortName">eclipse_cos_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">eclipse_cos_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_pipe_rtl_TB/cordic/mul_Kn_cos/value_out" type="array">
+      <obj_property name="ElementShortName">value_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">value_out[11:0]</obj_property>
+   </wvobject>
+</wave_config>
