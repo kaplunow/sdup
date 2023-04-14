@@ -1,0 +1,15 @@
+12:45:01 **** Incremental Build of configuration Debug for project find_max ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../str_acc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"str_acc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../find_max_bsp/ps7_cortexa9_0/include -MMD -MP -MF"str_acc.d" -MT"str_acc.o" -o "str_acc.o" "../str_acc.c"
+../str_acc.c:10:10: fatal error: xllfifo.h: No such file or directory
+ #include "xllfifo.h"
+          ^~~~~~~~~~~
+compilation terminated.
+make: *** [subdir.mk:26: str_acc.o] Error 1
+
+12:45:02 Build Finished (took 752ms)
+

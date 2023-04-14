@@ -1,0 +1,16 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Apr 14 12:25:02 2023
+| Host         : DESKTOP-J38DFM6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'stream_acc_design_cordic_stream_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of stream_acc_design_cordic_stream_acc_0_0 (xilinx.com:user:cordic_stream_acc:1.0) from (Rev. 23) to (Rev. 24)
+
