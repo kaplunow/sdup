@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Fri Apr 28 12:21:21 2023
+# Process ID: 20360
+# Current directory: C:/sdup/lab/5_1/stream_acc_system/stream_acc_system.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/sdup/lab/5_1/stream_acc_system/stream_acc_system.sdk/webtalk/webtalk.log
+# Journal file: C:/sdup/lab/5_1/stream_acc_system/stream_acc_system.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

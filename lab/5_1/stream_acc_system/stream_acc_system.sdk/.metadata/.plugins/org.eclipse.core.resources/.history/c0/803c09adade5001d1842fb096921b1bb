@@ -38,7 +38,8 @@ s32 sin, cos; //Auxiliary sinus and cosinus values
 		goto error;
 
     //Lab 5
-    print("Let's calculate the minimum and maximum of sin(x)+cos(x) in 0<x<pi/2 \n\r");
+    //print("Let's calculate the maximum of sin(x)+cos(x) in 0<x<pi/2 \n\r");
+    print("Let's calculate the minimum of sin(x)+cos(x) in 0<x<pi/2 \n\r");
 
 
     //Initialize angles buffer with values in range from 0 to pi/2
@@ -55,18 +56,18 @@ s32 sin, cos; //Auxiliary sinus and cosinus values
     	val = sin + cos;
 
     	//Lab 5
-    	if (val > max) max = val;
+    	//if (val > max) max = val;
     	if (val < min ) min = val;
     }
     
     //Lab 5
-    if (max >= 0){
-		xil_printf("Maximum value of sin(x)+cos(x) is %d.%d \n\r", max>>10, ((max&0x3ff)*100)/1024);
-	}
-	else{
-		max=-max;
-		xil_printf("Maximum value of sin(x)+cos(x) is -%d.%d \n\r", max>>10, ((max&0x3ff)*100)/1024);
-	}
+//    if (max >= 0){
+//		xil_printf("Maximum value of sin(x)+cos(x) is %d.%d \n\r", max>>10, ((max&0x3ff)*100)/1024);
+//	}
+//	else{
+//		max=-max;
+//		xil_printf("Maximum value of sin(x)+cos(x) is -%d.%d \n\r", max>>10, ((max&0x3ff)*100)/1024);
+//	}
 
     if (min >= 0){
 		xil_printf("Minimum value of sin(x)+cos(x) is %d.%d \n\r", min>>10, ((max&0x3ff)*100)/1024);

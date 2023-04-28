@@ -4869,3 +4869,6 @@ java.lang.NullPointerException
 
 !ENTRY com.xilinx.sdk.utils 0 0 2023-04-28 11:07:06.299
 !MESSAGE XSCT command with result: [::hsi::utils::closesw C:/sdup/lab/5_1/stream_acc_system/stream_acc_system.sdk/find_max_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-28 12:21:19.491
+!MESSAGE Executed Webtalk command
