@@ -1,4 +1,4 @@
-12:16:01 **** Auto Build of configuration Debug for project find_max ****
+14:14:20 **** Auto Build of configuration Debug for project find_max ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -15,9 +15,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size find_max.elf  |tee "find_max.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  29372	   1168	  35544	  66084	  10224	find_max.elf
+  29804	   1168	  35544	  66516	  103d4	find_max.elf
 'Finished building: find_max.elf.size'
 ' '
 
-12:16:02 Build Finished (took 1s.184ms)
+14:14:22 Build Finished (took 1s.667ms)
 

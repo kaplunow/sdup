@@ -20,26 +20,63 @@ u32 angles[NBR_OF_ANGLES];// = {0, 100, 201, 304, 410, 522, 641, 770, 918, 1099,
 //Accelerator output buffer
 u32 sin_cos[NBR_OF_ANGLES];
 
+
+//Convienient function that overrites values.
+void findMinMax_trig_sum(u32 *arr, u32 size, s32 *min, s32 *max) {
+
+
+	s32 sin = RESULT_REG_SIN(arr[79]);
+	s32 cos = RESULT_REG_COS(arr[79]);
+	s32 val = sin + cos;
+
+	*min = val;
+    *max = val;
+
+    for (int i = 79; i < size; i++) {
+
+    	sin = RESULT_REG_SIN(arr[i]);
+    	cos = RESULT_REG_COS(arr[i]);
+    	val = sin + cos;
+
+        if (val < *min) {
+            *min = val;
+        }
+        if (val > *max) {
+            *max = val;
+        }
+    }
+    //Calculations for 4th uarter
+    for (int i = 79; i < size; i++) {
+
+    	sin = RESULT_REG_SIN(arr[i]);
+    	cos = RESULT_REG_COS(arr[i]);
+    	val = -sin + cos; //reduction formulas
+
+        if (val < *min) {
+            *min = val;
+        }
+        if (val > *max) {
+            *max = val;
+        }
+    }
+
+}
+
 int main()
 {
 u32 i; //Iterators
 u32 nbr_of_results;
 s32 max=0;  //Maximum value m
-
-//Lab 5
-s32 min = 0;
-
-s32 val = 0;  //sin(x) + cos(x) function value
-s32 sin, cos; //Auxiliary sinus and cosinus values
+s32 min=0; //Maximum value m
+//s32 val = 0;  //sin(x) + cos(x) function value
+//s32 sin, cos; //Auxiliary sinus and cosinus values
 
 	// Initialize FIFOs and accelerator. Check status
 	init_platform();
 	if ( init_cordic_acc() == XST_FAILURE )
 		goto error;
 
-    //Lab 5
-    print("Let's calculate the minimum and maximum of sin(x)+cos(x) in 0<x<pi/2 \n\r");
-
+    print("Calcualtion of the maximum and minimum of sin(x)+cos(x) in -pi/2<x<pi/2 \n\r");
 
     //Initialize angles buffer with values in range from 0 to pi/2
     //As fix-point(13:10), we distribute values 0 to 1607 ( = pi/2 * 1024)
@@ -48,18 +85,8 @@ s32 sin, cos; //Auxiliary sinus and cosinus values
     //Run accelerator to get sin(x) and cos(x)
     cordic_calc(angles, NBR_OF_ANGLES, sin_cos, &nbr_of_results );
 
+    findMinMax_trig_sum(sin_cos, nbr_of_results, &min, &max);
 
-    for(i=0; i<nbr_of_results; i++){
-    	sin = RESULT_REG_SIN(sin_cos[i]);
-    	cos = RESULT_REG_COS(sin_cos[i]);
-    	val = sin + cos;
-
-    	//Lab 5
-    	if (val > max) max = val;
-    	if (val < min ) min = val;
-    }
-    
-    //Lab 5
     if (max >= 0){
 		xil_printf("Maximum value of sin(x)+cos(x) is %d.%d \n\r", max>>10, ((max&0x3ff)*100)/1024);
 	}
@@ -69,15 +96,16 @@ s32 sin, cos; //Auxiliary sinus and cosinus values
 	}
 
     if (min >= 0){
-		xil_printf("Minimum value of sin(x)+cos(x) is %d.%d \n\r", min>>10, ((max&0x3ff)*100)/1024);
+		xil_printf("Minimum value of sin(x)+cos(x) is %d.%d \n\r", min>>10, ((min&0x3ff)*100)/1024);
 	}
 	else{
 		min=-min;
-		xil_printf("Maximum value of sin(x)+cos(x) is -%d.%d \n\r", min>>10, ((max&0x3ff)*100)/1024);
-	}	
-	
+		xil_printf("Minimum value of sin(x)+cos(x) is -%d.%d \n\r", min>>10, ((min&0x3ff)*100)/1024);
+	}
+
 error:
 	reset_cordic_acc();
     cleanup_platform();
     while(1);
+
 }

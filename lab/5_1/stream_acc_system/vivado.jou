@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 28 13:28:09 2023
+# Process ID: 10380
+# Current directory: C:/sdup/lab/5_1/stream_acc_system
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5832 C:\sdup\lab\5_1\stream_acc_system\stream_acc_system.xpr
+# Log file: C:/sdup/lab/5_1/stream_acc_system/vivado.log
+# Journal file: C:/sdup/lab/5_1/stream_acc_system\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/sdup/lab/5_1/stream_acc_system/stream_acc_system.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/sdup/lab/5_1/stream_acc_system/stream_acc_system.sdk -hwspec C:/sdup/lab/5_1/stream_acc_system/stream_acc_system.sdk/stream_acc_design_wrapper.hdf
