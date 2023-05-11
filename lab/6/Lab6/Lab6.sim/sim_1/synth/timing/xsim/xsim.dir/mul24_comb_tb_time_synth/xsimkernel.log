@@ -1,0 +1,7 @@
+Running: xsim.dir/mul24_comb_tb_time_synth/xsimk.exe -simmode gui -wdb mul24_comb_tb_time_synth.wdb -simrunnum 0 -socket 59760
+Design successfully loaded
+Design Loading Memory Usage: 7472 KB (Peak: 7472 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 8728 KB (Peak: 8728 KB)
+Simulation CPU Usage: 124 ms

@@ -1,0 +1,13 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Binary result is = 000000101010101010101010
+Real value is = 0.333332
+Binary result is = 000000101010101010101010
+Real value is = 0.333332
+Binary result is = 000000101010101010101010
+Real value is = 0.333332
+Binary result is = 000000101010101010101010
+Real value is = 0.333332
+0. Output is 0.199999. Correct result is 0.200000
+Input is 6.000000. Output is 0.166666. Correct result is 0.166667
+Input is 7.000000. Output is 0.142857. Correct result is 0.142857

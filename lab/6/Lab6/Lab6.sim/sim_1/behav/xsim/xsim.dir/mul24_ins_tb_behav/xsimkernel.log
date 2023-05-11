@@ -1,0 +1,7 @@
+Running: xsim.dir/mul24_ins_tb_behav/xsimk.exe -simmode gui -wdb mul24_ins_tb_behav.wdb -simrunnum 0 -socket 64186
+Design successfully loaded
+Design Loading Memory Usage: 6308 KB (Peak: 6308 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 7068 KB (Peak: 7068 KB)
+Simulation CPU Usage: 93 ms
