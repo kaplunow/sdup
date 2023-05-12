@@ -4,11 +4,4 @@ Running: C:/MyPrograms/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4100] "C:/sdup/lab/7/cordic/cordic.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.cordic_rtl7_default
-Compiling module xil_defaultlib.cordic_rtl7_TB
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot cordic_rtl7_TB_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

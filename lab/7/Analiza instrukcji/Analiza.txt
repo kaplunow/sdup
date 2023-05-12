@@ -10,6 +10,8 @@ S11 = 32'h0b, S12 = 32'h0c, S13 = 32'h0d } state;
 - trzeba pamietac o zmianie modulu w testbenchu
 
 - Exercise 2 - zmiana parametrów nie powoduje niczego - ZZZ na sin_out, cos_out
+
+- exercise 9 - naprzemienne sygnał są różnej dlugości - ?! - 
 ~~~~
 Pytania i odpowiedzi
 
@@ -54,3 +56,13 @@ cordic6
 	115 Flip flops
 	max frequency is between 285.7Mhz and 300.3MHz
 
+Simulate file cordic_rtl7.sv. As its input/output interface is changed in
+comparison to the previous versions use cordic_rtl7_tb.sv as the top level
+module. What is real input-output and an average latency (throughput) of this
+module. How many data can be processed simultanuously?
+
+clock, reset, in_valid, in_ready, in_angle, out_valid, out_ready, out_sin, out_cos
+Latency 27 (28)
+
+How many data can be processed simultanuously?
+no idea
