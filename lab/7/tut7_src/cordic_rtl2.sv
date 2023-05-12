@@ -11,9 +11,9 @@ reg signed [11:0] atan[0:10] =
 12'h010, 12'h008, 12'h004, 12'h002, 12'h001 };
 
 //FSMD states
-enum { S1 = 4'h01, S2, S3 = 4'h03, S4 = 4'h04, S5 = 4'h05,
-S6 = 4'h06, S7 = 4'h07, S8 = 4'h08, S9 = 4'h09, S10 = 4'h0a,
-S11 = 4'h0b, S12 = 4'h0c, S13 = 4'h0d } state;
+enum { S1 = 32'h01, S2 = 32'h02, S3 = 32'h03, S4 = 32'h04, S5 = 32'h05,
+S6 = 32'h06, S7 = 32'h07, S8 = 32'h08, S9 = 32'h09, S10 = 32'h0a,
+S11 = 32'h0b, S12 = 32'h0c, S13 = 32'h0d } state;
 //Algorithm Variables
 reg signed [11:0] angle, t_angle, sin, cos, sin_frac, cos_frac;
 reg signed [11:0] atan_val;

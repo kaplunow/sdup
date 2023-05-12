@@ -1,0 +1,327 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May 11 22:47:19 2023
+# Process ID: 3260
+# Current directory: C:/sdup/lab/7/tut7_src
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14188 C:\sdup\lab\7\tut7_src\cordic.xpr
+# Log file: C:/sdup/lab/7/tut7_src/vivado.log
+# Journal file: C:/sdup/lab/7/tut7_src\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/sdup/lab/7/tut7_src/cordic.xpr
+save_project_as cordic C:/sdup/lab/7/cordic -force
+launch_simulation
+source cordic_rtl7_TB.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl2 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+source cordic_rtl_TB.tcl
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl3 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 10 us
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 10 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl2 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+run 10 us
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 10 us
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 10 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run all
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl2 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 10 us
+run 10 us
+run 10 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl3 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+launch_simulation
+launch_simulation
+source cordic_rtl_TB.tcl
+run 10 us
+run 10 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 400 us
+run 400 us
+run 400 us
+run 400 us
+run 100 us
+run 100 us
+run 100 us
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 1000 us
+run 1000 us
+run 1000 us
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 2800 us
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 2800 us
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 2500 us
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 2300 us
+run 400 us
+run 400 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl4 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 400 us
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 400 us
+run 400 us
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 380 us
+run 380 us
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 380 us
+run 200 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl5 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 200 us
+run 200 us
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+refresh_design
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl6 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+launch_simulation
+source cordic_rtl_TB.tcl
+run 200 us
+run 200 us
+run 200 us
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl7_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cordic_rtl7 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+current_sim simulation_1
+close_sim
+launch_simulation
+source cordic_rtl7_TB.tcl
+close_sim
+close_sim

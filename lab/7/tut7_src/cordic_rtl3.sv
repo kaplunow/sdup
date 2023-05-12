@@ -1,7 +1,7 @@
 module cordic_rtl3( clock, reset, start, angle_in, ready_out, sin_out, cos_out);
-parameter integer W = 12; //Fixed-point representation precision fixpoint(12 | 10)
+parameter integer W = 1; //Fixed-point representation precision fixpoint(12 | 10)
 parameter int i_max= 14; // number of CORDIC iterations, must be <= 14 !!!
-parameter int guard_bits= 5; // number of guard bits (additional bitwidth of the internal arithmetic
+parameter int guard_bits= 4; // number of guard bits (additional bitwidth of the internal arithmetic
 input clock, reset;
 input start; //start processing
 input [W-1:0] angle_in;

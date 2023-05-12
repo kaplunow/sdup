@@ -1,0 +1,56 @@
+~~~~
+Uwagi
+
+- błąd na samym początku instrukcji
+Aby działało trzeba podmienić na:
+enum { S1 = 32'h01, S2 = 32'h02, S3 = 32'h03, S4 = 32'h04, S5 = 32'h05,
+S6 = 32'h06, S7 = 32'h07, S8 = 32'h08, S9 = 32'h09, S10 = 32'h0a,
+S11 = 32'h0b, S12 = 32'h0c, S13 = 32'h0d } state;
+
+- trzeba pamietac o zmianie modulu w testbenchu
+
+- Exercise 2 - zmiana parametrów nie powoduje niczego - ZZZ na sin_out, cos_out
+~~~~
+Pytania i odpowiedzi
+
+Which states have been modified in comparison to the FSMD presented in Fig. 1?
+
+	State 2 (622 in binary -> 0.607421)
+	State 6, state 7 (changed nextstate to s12),
+	State 8 - State 11 - deleted
+	State 12 - changed code
+
+What is the maximum error when expressed in LSBs?
+
+	Really depends on the simulation time - for Cordic1 it was 5 for cordic2 it was 7
+	MSE and ME values also vary - usually cordic 2 has worse results
+
+Is it possible to obtain maximum error below 1 LSB?
+	CANT DO
+
+Note the simulation time – how many clock cycles per single
+calculation are required. Note the calculation errors?
+	for i_max = 10, guard_bits = 0 i have read 23 clock cycles. From what i understand it should be 21 clock cycles
+
+What, in theory, is the MSE and Root Mean Square Error (RMSE) when only
+truncation is taken into account?
+	CANT DO
+	
+	
+	
+After design implementation, open utilisation report. Note number of used
+flip-flops and LUTs. Then view cordic_rtl5.sv and try to count the number of
+required flip-flops, note signals with reg keyword.
+	131 LUT
+	83  Flip-Flop
+	29 rzeczy ze słowem reg?
+	
+What is roughly the maximum clock frequency?
+	between 222 and 250MHz
+
+
+cordic6	
+	139 LUT
+	115 Flip flops
+	max frequency is between 285.7Mhz and 300.3MHz
+

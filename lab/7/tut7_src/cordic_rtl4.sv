@@ -1,7 +1,7 @@
 module cordic_rtl4( clock, reset, start, angle_in, ready_out, sin_out, cos_out);
-parameter integer W = 12; //Fixed-point representation precision fixpoint(12 | 10)
-parameter int i_max= 10; // number of CORDIC iterations, must be <= 14!!!
-parameter int guard_bits= 0; // number of guard bits (additional bitwidth of the internal arithmetic
+parameter integer W = 1; //Fixed-point representation precision fixpoint(12 | 10)
+parameter int i_max= 14; // number of CORDIC iterations, must be <= 14!!!
+parameter int guard_bits= 4; // number of guard bits (additional bitwidth of the internal arithmetic
 input clock, reset;
 input start; //start processing
 input [W-1:0] angle_in;
@@ -84,8 +84,14 @@ S7:begin
   if(i < i_max) state <= S3; else state <= S12;
 end
 S12: begin
+  // Pre Exercise 4
   sin_out <= sin[W1-1 : guard_bits]; // + sin[guard_bits-1];
   cos_out <= cos[W1-1 : guard_bits]; // + cos[guard_bits-1];
+  //Exercise 4
+  //sin_out <= sin[W1-1 : guard_bits] + sin[guard_bits-1];
+  //cos_out <= cos[W1-1 : guard_bits] + cos[guard_bits-1];
+  
+  
   ready_out <= 1;
   state <= S13;
   end

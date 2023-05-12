@@ -36,7 +36,7 @@ real MSE_sin_LSB, MSE_cos_LSB; // Mean Square Error: MSE= SUM(error^2) / N (N- n
 real ME_sin_LSB, ME_cos_LSB; // Mean Error for sin and cos
 const real FIX_1 = 1 / 1024.0; // fix point representation of the LSBit.
 
-cordic_rtl2 UnitUnderTest( clock, reset, start, angle_in, ready_out, sin_out, cos_out);
+cordic_rtl6 UnitUnderTest( clock, reset, start, angle_in, ready_out, sin_out, cos_out);
 
 //Clock generator
 initial

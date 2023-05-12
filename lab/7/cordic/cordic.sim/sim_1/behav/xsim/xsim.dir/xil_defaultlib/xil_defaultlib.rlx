@@ -1,0 +1,14 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/sdup/lab/7/cordic/cordic.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/sdup/lab/7/tut7_src/cordic_rtl.sv,1592933288,systemVerilog,,C:/sdup/lab/7/tut7_src/cordic_rtl2.sv,,cordic_rtl,,,,,,,,
+C:/sdup/lab/7/tut7_src/cordic_rtl2.sv,1683838735,systemVerilog,,C:/sdup/lab/7/tut7_src/cordic_rtl3.sv,,cordic_rtl2,,,,,,,,
+C:/sdup/lab/7/tut7_src/cordic_rtl3.sv,1683850009,systemVerilog,,C:/sdup/lab/7/tut7_src/cordic_rtl4.sv,,cordic_rtl3,,,,,,,,
+C:/sdup/lab/7/tut7_src/cordic_rtl4.sv,1683852610,systemVerilog,,C:/sdup/lab/7/tut7_src/cordic_rtl5.sv,,cordic_rtl4,,,,,,,,
+C:/sdup/lab/7/tut7_src/cordic_rtl5.sv,1594222418,systemVerilog,,C:/sdup/lab/7/tut7_src/cordic_rtl6.sv,,cordic_rtl5,,,,,,,,
+C:/sdup/lab/7/tut7_src/cordic_rtl6.sv,1594224646,systemVerilog,,C:/sdup/lab/7/tut7_src/cordic_rtl7.sv,,cordic_rtl6,,,,,,,,
+C:/sdup/lab/7/tut7_src/cordic_rtl7.sv,1594391784,systemVerilog,,C:/sdup/lab/7/tut7_src/cordic_rtl_tb.sv,,cordic_rtl7,,,,,,,,
+C:/sdup/lab/7/tut7_src/cordic_rtl7_tb.sv,1594321422,systemVerilog,,,,cordic_rtl7_TB,,,,,,,,
+C:/sdup/lab/7/tut7_src/cordic_rtl_tb.sv,1683858698,systemVerilog,,C:/sdup/lab/7/tut7_src/cordic_rtl7_tb.sv,,cordic_rtl_TB,,,,,,,,
