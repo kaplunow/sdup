@@ -11,3 +11,28 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/sdup2/sdup/lab/final_project/Taylor_mod/Taylor_mod.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Taylor_mod_rtl_tb.tcl
+close_sim
+launch_simulation
+source Taylor_mod_rtl_tb.tcl
+close_sim
+launch_simulation
+source Taylor_mod_rtl_tb.tcl
+close_sim
+launch_simulation
+source Taylor_mod_rtl_tb.tcl
+close_sim
+launch_simulation
+source Taylor_mod_rtl_tb.tcl
+close_sim
+launch_simulation
+source Taylor_mod_rtl_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source Taylor_mod_rtl_tb.tcl
+close_sim

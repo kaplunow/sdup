@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module Taylor_mod_rtl(clock, reset, start, value_in, ready_out, arccos_out);
+module Taylor_mod_rtl(clock, reset, start, cos_in, ready_out, arccos_out);
 
 //ZALOZENIE - LICZBY SA Z ZAKRESU -1, 1, WIEC ICH ILOCZYNY ZAWSZE BEDA W TYM ZAKRESIE
 parameter integer WIDTH = 32;
@@ -11,7 +11,7 @@ localparam [WIDTH-1:0]half_pi_mul = 32'b1100100100001111110110101010001;
 
 // Defining ports
 input clock, reset, start;
-input [WIDTH-1:0] value_in;
+input [WIDTH-1:0] cos_in;
 output reg ready_out; //result is ready
 output reg [WIDTH-1:0] arccos_out;
 
@@ -85,7 +85,7 @@ begin
             S2: begin
                 ready_out <= 0;
                 arccos_out <= 0;
-                x <= value_in;       
+                x <= cos_in;       
                 
                  state <= S3; 
             end
@@ -103,7 +103,6 @@ begin
             S4: begin 
                 x_squared = x*x;
                 x_squared = x_squared[61:30];
-                
                 i = 0;
                 sum = 0;
                 state <= S5;

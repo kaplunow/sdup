@@ -1,0 +1,7 @@
+Running: xsim.dir/Taylor_mod_rtl_tb_behav/xsimk.exe -simmode gui -wdb Taylor_mod_rtl_tb_behav.wdb -simrunnum 0 -socket 57250
+Design successfully loaded
+Design Loading Memory Usage: 5896 KB (Peak: 5896 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 6560 KB (Peak: 6560 KB)
+Simulation CPU Usage: 31 ms
