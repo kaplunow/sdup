@@ -1,22 +1,21 @@
 `timescale 1ns / 1ps
-module Taylor_mod_rtl(clock, reset, start, value_in, ready_out, arctan_out);
+module Taylor_mod_rtl(clock, reset, start, value_in, ready_out, arccos_out);
 
-//Rozwini?cie w szereg Taylora funkcji arccos(x) mo?na uzyska?, korzystaj?c z rozwini?cia w szereg Taylora funkcji arcsin(x).
-//Funkcje te s? powi?zane ze sob? przez wzór: arccos(x) = ?/2 - arcsin(x).
-// Dziedzine dla arcsin to <a,b> = <-1,1>.
-
+//ZALOZENIE - LICZBY SA Z ZAKRESU -1, 1, WIEC ICH ILOCZYNY ZAWSZE BEDA W TYM ZAKRESIE
 parameter integer WIDTH = 32;
 parameter MUL = 1073741824; //2^30
 parameter SHIFT = 30;
+parameter ITERATIONS = 20;
+parameter PI = 3.1415926535;
 
 // Defining ports
 input clock, reset, start;
 input [WIDTH-1:0] value_in;
 output reg ready_out; //result is ready
-output reg [WIDTH-1:0] arctan_out;
+output reg [WIDTH-1:0] arccos_out;
 
 // look up table containing the k parameter value (number used to multiply the de   
-reg signed [WIDTH-1:0] parameter_k [0:15];
+reg signed [WIDTH-1:0] parameter_k [0:29];
 
 // Defining states - TODO CHECK OF REDUNDANT ONES
 parameter   S1 = 4'h01, S2 = 4'h02, S3 = 4'h03, S4 = 4'h04, S5 = 4'h05,
@@ -24,11 +23,11 @@ parameter   S1 = 4'h01, S2 = 4'h02, S3 = 4'h03, S4 = 4'h04, S5 = 4'h05,
             S11 = 4'h0b, S12 = 4'h0c, S13 = 4'h0d;
 reg [3:0] state;
 
+
 // Algorithm variables 
-
-reg signed [WIDTH-1:0] sum;
-reg signed [WIDTH-1:0] parameter_k_val; 
-
+reg signed [WIDTH-1:0] x, sum, param;
+reg signed [2 * WIDTH-1:0] x_squared, x_multiplied, temp;
+logic [WIDTH-1:0] i, j;
 
 initial
 begin
@@ -48,6 +47,20 @@ parameter_k[12] = 32'b11010011010000110001111;
 parameter_k[13] = 32'b10111100000101101110110;
 parameter_k[14] = 32'b10101000110111010001100;
 parameter_k[15] = 32'b10011000101101000001110;
+parameter_k[16] = 30'b10001010111101110100111;
+parameter_k[17] = 30'b1111111001010111110001;
+parameter_k[18] = 30'b1110100111101001010101;
+parameter_k[19] = 30'b1101100000010011011110;
+parameter_k[20] = 30'b1100100001100101101110;
+parameter_k[21] = 30'b1011101010000110111100;
+parameter_k[22] = 30'b1010111000101111101010;
+parameter_k[23] = 30'b1010001100100110000001;
+parameter_k[24] = 30'b1001100100111010101011;
+parameter_k[25] = 30'b1001000001000110100110;
+parameter_k[26] = 30'b1000100000101001010111;
+parameter_k[27] = 30'b1000000011000111110010;
+parameter_k[28] = 30'b111101000001010111110;
+parameter_k[29] = 30'b111001111011111011110;
 end
 
 always @ (posedge clock)
@@ -56,24 +69,77 @@ begin
     begin
         ready_out <= 1'b0;
         state <= S1;
+        
     end
     else
     begin
         case(state)
             S1: begin
+            // IDLE
                 if(start == 1'b1) state <= S2; else state <= S1;
             end
-            S2: begin
-            //assign values to the variables and scale them with 2^30
             
+            S2: begin
+            ready_out <= 0;
+            arccos_out <= 0;
+            x <= value_in * MUL;       
+            state <= S3;
             end
+            
             S3:
             begin
-            //same as s2 but for loop (?)
+            x_squared = x*x;
+            //TODO - DELETE 2 FIRST BITS SOMEHOW
+            x_squared = x_squared >>> SHIFT;
+            i = 0;
+            sum = 0;
+            state <= S4;
             end
-            S4:
+            
+            S4: begin
+            param = parameter_k[i];
+            if (i==0) state <= S5; else state <= S6;
+            end
+            
+            S5:
             begin
             // multyplinbg the x itself
+            x_multiplied = x;
+            temp  = x_multiplied;
+            temp = temp * param;
+            //TODO - DELETE 2 FIRST BITS SOMEHO
+            temp = temp >>> SHIFT;
+            sum = temp;
+            i = i+1;
+            
+            if(i <= ITERATIONS) state = S7; else state = S3;
+            end
+            S6:
+            begin
+            x_multiplied = x_multiplied * x_squared;
+            //TODO - DELETE 2 FIRST BITS SOMEHOW
+            x_multiplied = x_multiplied >>> SHIFT;
+  
+            temp = x_multiplied;
+            temp = temp * param;
+            temp = temp >>> SHIFT;
+            sum = sum + temp;
+            i = i+1;
+            
+            if(i <= ITERATIONS) state = S7; else state = S3;
+            end
+            
+            S6:
+            begin
+            arccos_out <= PI/2 - (sum>>>SHIFT);
+            ready_out <= 1;
+            state = S7;
+            end
+            
+            S7:
+            //IDLE - to prevent perpetual launch          
+            begin
+            if (start == 0'b0) state = S1; else state = S7;
             end
         endcase
     end
