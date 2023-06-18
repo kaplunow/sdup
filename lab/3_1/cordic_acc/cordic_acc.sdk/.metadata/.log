@@ -10770,3 +10770,43 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-12
 
 !ENTRY com.xilinx.sdk.utils 0 0 2023-03-24 14:15:09.208
 !MESSAGE XSCT command with result: [disconnect tcfchan#10], Result: [null, ]. Thread: Thread-1052
+!SESSION 2023-06-18 15:08:24.505 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/sdup/lab/3_1/cordic_acc/cordic_acc.sdk
+
+!ENTRY org.eclipse.ui 2 0 2023-06-18 15:08:48.758
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-06-18 15:08:48.758
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2023-06-18 15:08:50.141
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-06-18 15:08:50.141
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-06-18 15:09:08.090
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-06-18 15:09:08.091
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-06-18 15:09:13.584
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-06-18 15:09:13.585
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-06-18 15:09:13.587
+!MESSAGE XSCT Command: [setws C:/sdup/lab/3_1/cordic_acc/cordic_acc.sdk], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-06-18 15:09:13.598
+!MESSAGE XSCT command with result: [setws C:/sdup/lab/3_1/cordic_acc/cordic_acc.sdk], Result: [null, ]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-06-18 15:09:13.618
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/sdup/lab/3_1/cordic_acc/cordic_acc.sdk/design_acc_wrapper_hw_platform_0/system.hdf], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-06-18 15:09:22.354
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/sdup/lab/3_1/cordic_acc/cordic_acc.sdk/design_acc_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-1

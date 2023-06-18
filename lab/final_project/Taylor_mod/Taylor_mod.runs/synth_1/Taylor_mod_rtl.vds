@@ -1,0 +1,504 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun 18 13:23:20 2023
+# Process ID: 12188
+# Current directory: C:/sdup/lab/final_project/Taylor_mod/Taylor_mod.runs/synth_1
+# Command line: vivado.exe -log Taylor_mod_rtl.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Taylor_mod_rtl.tcl
+# Log file: C:/sdup/lab/final_project/Taylor_mod/Taylor_mod.runs/synth_1/Taylor_mod_rtl.vds
+# Journal file: C:/sdup/lab/final_project/Taylor_mod/Taylor_mod.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Taylor_mod_rtl.tcl -notrace
+Command: synth_design -top Taylor_mod_rtl -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13868 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 362.051 ; gain = 100.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Taylor_mod_rtl' [C:/sdup/lab/final_project/Taylor_mod/Taylor_mod.srcs/sources_1/new/Taylor_mod_rtl.sv:2]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter MUL bound to: 1073741824 - type: integer 
+	Parameter SHIFT bound to: 30 - type: integer 
+	Parameter ITERATIONS bound to: 20 - type: integer 
+	Parameter half_pi_mul bound to: 1686629713 - type: integer 
+	Parameter S1 bound to: 4'b0001 
+	Parameter S2 bound to: 4'b0010 
+	Parameter S3 bound to: 4'b0011 
+	Parameter S4 bound to: 4'b0100 
+	Parameter S5 bound to: 4'b0101 
+	Parameter S6 bound to: 4'b0110 
+	Parameter S7 bound to: 4'b0111 
+	Parameter S8 bound to: 4'b1000 
+	Parameter S9 bound to: 4'b1001 
+	Parameter S10 bound to: 4'b1010 
+	Parameter S11 bound to: 4'b1011 
+	Parameter S12 bound to: 4'b1100 
+	Parameter S13 bound to: 4'b1101 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/sdup/lab/final_project/Taylor_mod/Taylor_mod.srcs/sources_1/new/Taylor_mod_rtl.sv:77]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/sdup/lab/final_project/Taylor_mod/Taylor_mod.srcs/sources_1/new/Taylor_mod_rtl.sv:109]
+INFO: [Synth 8-6155] done synthesizing module 'Taylor_mod_rtl' (1#1) [C:/sdup/lab/final_project/Taylor_mod/Taylor_mod.srcs/sources_1/new/Taylor_mod_rtl.sv:2]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 418.051 ; gain = 156.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 418.051 ; gain = 156.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 418.051 ; gain = 156.625
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 418.051 ; gain = 156.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               62 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                32x32  Multipliers := 2     
+	                33x62  Multipliers := 1     
+	                32x33  Multipliers := 1     
++---Muxes : 
+	   9 Input     64 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Taylor_mod_rtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               62 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                32x32  Multipliers := 2     
+	                33x62  Multipliers := 1     
+	                32x33  Multipliers := 1     
++---Muxes : 
+	   9 Input     64 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/sdup/lab/final_project/Taylor_mod/Taylor_mod.srcs/sources_1/new/Taylor_mod_rtl.sv:92]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 8 [C:/sdup/lab/final_project/Taylor_mod/Taylor_mod.srcs/sources_1/new/Taylor_mod_rtl.sv:121]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/sdup/lab/final_project/Taylor_mod/Taylor_mod.srcs/sources_1/new/Taylor_mod_rtl.sv:128]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/sdup/lab/final_project/Taylor_mod/Taylor_mod.srcs/sources_1/new/Taylor_mod_rtl.sv:110]
+WARNING: [Synth 8-6014] Unused sequential element p_1_out was removed. 
+DSP Report: Generating DSP sum0, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP sum0.
+DSP Report: operator sum0 is absorbed into DSP sum0.
+DSP Report: operator sum0 is absorbed into DSP sum0.
+DSP Report: Generating DSP sum0, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP sum0.
+DSP Report: operator sum0 is absorbed into DSP sum0.
+DSP Report: operator sum0 is absorbed into DSP sum0.
+DSP Report: Generating DSP sum0, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP sum0.
+DSP Report: register A is absorbed into DSP sum0.
+DSP Report: operator sum0 is absorbed into DSP sum0.
+DSP Report: operator sum0 is absorbed into DSP sum0.
+DSP Report: Generating DSP sum0, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP sum0.
+DSP Report: register A is absorbed into DSP sum0.
+DSP Report: operator sum0 is absorbed into DSP sum0.
+DSP Report: operator sum0 is absorbed into DSP sum0.
+DSP Report: Generating DSP x_squared0, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP x_squared0.
+DSP Report: operator x_squared0 is absorbed into DSP x_squared0.
+DSP Report: operator x_squared0 is absorbed into DSP x_squared0.
+DSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator x_squared0 is absorbed into DSP p_1_out.
+DSP Report: operator x_squared0 is absorbed into DSP p_1_out.
+DSP Report: Generating DSP x_squared0, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP x_squared0.
+DSP Report: register A is absorbed into DSP x_squared0.
+DSP Report: operator x_squared0 is absorbed into DSP x_squared0.
+DSP Report: operator x_squared0 is absorbed into DSP x_squared0.
+DSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP p_1_out.
+DSP Report: register p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator x_squared0 is absorbed into DSP p_1_out.
+DSP Report: operator x_squared0 is absorbed into DSP p_1_out.
+DSP Report: Generating DSP sum2, operation Mode is: A*B2.
+DSP Report: register B is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: Generating DSP sum2, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: Generating DSP sum2, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: Generating DSP sum2, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: Generating DSP sum2, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: Generating DSP sum2, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: Generating DSP sum2, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: Generating DSP sum2, operation Mode is: PCIN+A2*B.
+DSP Report: register A is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: operator sum2 is absorbed into DSP sum2.
+DSP Report: Generating DSP sum1, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP sum1.
+DSP Report: operator sum1 is absorbed into DSP sum1.
+DSP Report: operator sum1 is absorbed into DSP sum1.
+DSP Report: Generating DSP sum1, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP sum1.
+DSP Report: operator sum1 is absorbed into DSP sum1.
+DSP Report: operator sum1 is absorbed into DSP sum1.
+DSP Report: Generating DSP sum1, operation Mode is: A*B2.
+DSP Report: register B is absorbed into DSP sum1.
+DSP Report: operator sum1 is absorbed into DSP sum1.
+DSP Report: operator sum1 is absorbed into DSP sum1.
+DSP Report: Generating DSP sum1, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP sum1.
+DSP Report: operator sum1 is absorbed into DSP sum1.
+DSP Report: operator sum1 is absorbed into DSP sum1.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[47]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[46]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[45]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[44]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[43]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[42]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[41]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[40]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[39]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[38]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[37]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[36]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[35]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[34]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[33]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[32]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[31]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[30]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[29]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[28]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[27]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[26]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[25]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[24]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[23]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[22]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[21]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[20]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[19]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[18]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[17]) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[47]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[46]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[45]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[44]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[43]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[42]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[41]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[40]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[39]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[38]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[37]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[36]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[35]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[34]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[33]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[32]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[31]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[30]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[29]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[28]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[27]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[26]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[25]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[24]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[23]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[22]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[21]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[20]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[19]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[18]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[17]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[15]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[14]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[13]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[12]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[11]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[10]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[9]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[8]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[7]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[6]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[5]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[4]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[3]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[2]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[1]__0) is unused and will be removed from module Taylor_mod_rtl.
+WARNING: [Synth 8-3332] Sequential element (p_1_out[0]__0) is unused and will be removed from module Taylor_mod_rtl.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 590.723 ; gain = 329.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+------------+---------------+----------------+
+|Module Name    | RTL Object | Depth x Width | Implemented As | 
++---------------+------------+---------------+----------------+
+|Taylor_mod_rtl | p_0_out    | 32x32         | LUT            | 
+|Taylor_mod_rtl | p_0_out    | 32x32         | LUT            | 
++---------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++---------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Taylor_mod_rtl | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | (PCIN>>17)+A*B2  | 15     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|Taylor_mod_rtl | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|Taylor_mod_rtl | A*B2             | 18     | 11     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | (PCIN>>17)+A*B2  | 16     | 11     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | A2*B             | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | PCIN+A2*B        | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | (PCIN>>17)+A2*B  | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | A2*B             | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | (PCIN>>17)+A2*B  | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | PCIN+A2*B        | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | A2*B             | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | (PCIN>>17)+A*B2  | 16     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | A*B2             | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|Taylor_mod_rtl | (PCIN>>17)+A*B2  | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
++---------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 590.723 ; gain = 329.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 590.723 ; gain = 329.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 590.723 ; gain = 329.297
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 590.723 ; gain = 329.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 590.723 ; gain = 329.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 590.723 ; gain = 329.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 590.723 ; gain = 329.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 590.723 ; gain = 329.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    68|
+|3     |DSP48E1 |    19|
+|4     |LUT1    |    33|
+|5     |LUT2    |   185|
+|6     |LUT3    |    46|
+|7     |LUT4    |    46|
+|8     |LUT5    |    44|
+|9     |LUT6    |    14|
+|10    |FDRE    |   150|
+|11    |FDSE    |     1|
+|12    |IBUF    |    35|
+|13    |OBUF    |    33|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   675|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 590.723 ; gain = 329.297
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 80 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 590.723 ; gain = 329.297
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 590.723 ; gain = 329.297
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 691.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 80 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 691.863 ; gain = 442.508
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 691.863 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/sdup/lab/final_project/Taylor_mod/Taylor_mod.runs/synth_1/Taylor_mod_rtl.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Taylor_mod_rtl_utilization_synth.rpt -pb Taylor_mod_rtl_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 18 13:23:57 2023...
