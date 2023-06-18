@@ -31,7 +31,7 @@ end
 //Stimuli signals
 initial
 begin
-    value_in <= -0.5 * MUL; //Modify value in fixed-point [2:10] 
+    value_in <= 0.5 * MUL; //Modify value in fixed-point [2:10] 
     start <= 1'b0;
 #20 start <= 1'b1;
 #30 start <= 1'b0;
