@@ -113,7 +113,7 @@ begin
             x_multiplied = x;
             temp  = x_multiplied;
             temp = temp * param;
-            //TODO - DELETE 2 FIRST BITS SOMEHO
+
             temp = temp[61:30];
             sum = temp;
             i = i+1;    
@@ -162,9 +162,9 @@ begin
             end
             
             S9:
-            //IDLE - to prevent perpetual launch          
+          
             begin
-            if (start == 0'b0) state = S1; else state = S8;
+            if (start == 0'b0) state = S1; else state = S9;
             end
         endcase
     end
