@@ -2,8 +2,6 @@
 2018.3
 Dec  7 2018
 00:33:28
-C:/New folder/sdup/lab/final_project/Taylor_mod/Taylor_mod.sim/sim_1/behav/xsim/glbl.v,1687099694,verilog,,,,glbl,,,,,,,,
-C:/New folder/sdup/lab/final_project/Taylor_mod/Taylor_mod.srcs/sim_1/new/Taylor_mod_rtl_tb.sv,1687512227,systemVerilog,,,,Taylor_mod_rtl_tb,,,,,,,,
-C:/New folder/sdup/lab/final_project/Taylor_mod/Taylor_mod.srcs/sim_1/new/Taylor_mod_rtl_tb_2.sv,1687512268,systemVerilog,,,,Taylor_mod_rtl_tb_2,,,,,,,,
-C:/New folder/sdup/lab/final_project/Taylor_mod/Taylor_mod.srcs/sources_1/new/Taylor_mod_rtl.sv,1687512712,systemVerilog,,C:/New folder/sdup/lab/final_project/Taylor_mod/Taylor_mod.srcs/sim_1/new/Taylor_mod_rtl_tb_2.sv,,Taylor_mod_rtl,,,,,,,,
-C:/sdup/lab/final_project/Taylor_mod/Taylor_mod.srcs/sources_1/new/Taylor_mod_beh.sv,1687027727,systemVerilog,,,,Taylor_mod_beh,,,,,,,,
+C:/materialy/studia/semestry/8/sdup/git/lab/final_project/Taylor_mod/Taylor_mod.sim/sim_1/behav/xsim/glbl.v,1687099283,verilog,,,,glbl,,,,,,,,
+C:/materialy/studia/semestry/8/sdup/git/lab/final_project/Taylor_mod/Taylor_mod.srcs/sim_1/new/Taylor_mod_rtl_tb_2.sv,1687513318,systemVerilog,,,,Taylor_mod_rtl_tb_2,,,,,,,,
+C:/materialy/studia/semestry/8/sdup/git/lab/final_project/Taylor_mod/Taylor_mod.srcs/sources_1/new/Taylor_mod_rtl.sv,1687513971,systemVerilog,,C:/materialy/studia/semestry/8/sdup/git/lab/final_project/Taylor_mod/Taylor_mod.srcs/sim_1/new/Taylor_mod_rtl_tb_2.sv,,Taylor_mod_rtl,,,,,,,,

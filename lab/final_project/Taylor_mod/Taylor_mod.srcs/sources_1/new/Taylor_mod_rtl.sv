@@ -80,11 +80,11 @@ begin
             S1: begin
             // IDLE
                 if(start == 1'b1) state <= S2; else state <= S1;
+                ready_out <= 0;
             end
             
             S2: begin
-                ready_out <= 0;
-                arccos_out <= 0;
+                //arccos_out <= 0;
                 x <= cos_in;       
                 
                  state <= S3; 
