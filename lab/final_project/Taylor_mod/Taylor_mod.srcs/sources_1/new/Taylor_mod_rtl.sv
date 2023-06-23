@@ -95,6 +95,10 @@ begin
                 begin
                 is_negative = 1;
                 x = ~(x-32'b1); 
+                end
+                else
+                begin
+                is_negative = 0;
                 end          
                 state <= S4;
             end
